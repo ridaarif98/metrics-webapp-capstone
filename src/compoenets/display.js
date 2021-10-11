@@ -12,7 +12,7 @@ const DisplayData = () => {
         <img src={image} alt="Europe" />
         <h1>Europe</h1>
       </div>
-      <ul>
+      <ul className="covidList">
         {covidData.map((data) => (
           <li>
             <p>{data.country}</p>

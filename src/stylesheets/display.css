@@ -32,7 +32,7 @@
   margin-bottom: 5px;
 }
 
-ul {
+.covidList {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -43,7 +43,7 @@ ul {
   background-color: #ec638a;
 }
 
-ul li {
+.covidList li {
   width: 50%;
   height: 150px;
   text-align: right;
@@ -53,39 +53,39 @@ ul li {
   color: #fff;
 }
 
-ul li p {
+.covidList li p {
   padding: 0 15px;
   font-size: 24px;
   font-weight: 700;
 }
 
-ul li span {
+.covidList li span {
   padding: 0 15px;
   font-size: 20px;
   font-weight: 600;
 }
 
-ul li:nth-child(2),
-ul li:nth-child(3),
-ul li:nth-child(6),
-ul li:nth-child(7),
-ul li:nth-child(10),
-ul li:nth-child(11),
-ul li:nth-child(14),
-ul li:nth-child(15),
-ul li:nth-child(18),
-ul li:nth-child(19),
-ul li:nth-child(22),
-ul li:nth-child(23),
-ul li:nth-child(26),
-ul li:nth-child(27),
-ul li:nth-child(30),
-ul li:nth-child(31),
-ul li:nth-child(34),
-ul li:nth-child(35),
-ul li:nth-child(38),
-ul li:nth-child(39),
-ul li:nth-child(42),
-ul li:nth-child(43) {
+.covidList li:nth-child(2),
+.covidList li:nth-child(3),
+.covidList li:nth-child(6),
+.covidList li:nth-child(7),
+.covidList li:nth-child(10),
+.covidList li:nth-child(11),
+.covidList li:nth-child(14),
+.covidList li:nth-child(15),
+.covidList li:nth-child(18),
+.covidList li:nth-child(19),
+.covidList li:nth-child(22),
+.covidList li:nth-child(23),
+.covidList li:nth-child(26),
+.covidList li:nth-child(27),
+.covidList li:nth-child(30),
+.covidList li:nth-child(31),
+.covidList li:nth-child(34),
+.covidList li:nth-child(35),
+.covidList li:nth-child(38),
+.covidList li:nth-child(39),
+.covidList li:nth-child(42),
+.covidList li:nth-child(43) {
   background-color: #f85785;
 }
