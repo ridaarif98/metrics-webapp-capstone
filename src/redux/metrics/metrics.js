@@ -1,4 +1,5 @@
 const FETCH_COVID_DATA = 'metric-webapp-capstone/metrics/FETCH_COVID_DATA';
+// const FETCH_COUNTRY_DATA = 'metric-webapp-capstone/metrics/FETCH_COUNTRY_DATA';
 const initialState = [];
 
 export const loadAPIData = () => async (dispatch) => {
@@ -16,6 +17,27 @@ export const loadAPIData = () => async (dispatch) => {
     payload: countries,
   });
 };
+
+// export const loadCountryData = () => async (dispatch) => {
+//   const covidGet = await fetch(
+//     'https://covid-api.mmediagroup.fr/v1/cases/?country=Germany'
+//   );
+//   const covidList = await covidGet.json();
+//   const twons = [];
+//   for (const key in covidList) {
+//     if (key !== 'All') {
+//       const newTwon = {
+//         name: key,
+//         confirmed: covidList[key].confirmed,
+//       };
+//       twons.push(newTwon);
+//     }
+//   }
+//   dispatch({
+//     type: FETCH_COUNTRY_DATA,
+//     payload: twons,
+//   });
+// };
 
 const covidReducer = (state = initialState, action) => {
   switch (action.type) {
