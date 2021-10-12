@@ -4,7 +4,7 @@ import DisplayData from './compoenets/display';
 import CovidDataRender from './compoenets/renderData';
 import CountryDislay from './compoenets/country';
 import store from './redux/configureStore';
-import NavBar from './compoenets/pages/navbar';
+import NavBar from './compoenets/navbar';
 
 function App() {
   return (

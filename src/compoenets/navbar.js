@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../stylesheets/navbar.css';
 
 const NavBar = () => {
   const links = [
@@ -8,11 +9,11 @@ const NavBar = () => {
       path: '/',
       text: '<',
     },
-    {
-      id: 2,
-      path: '/country',
-      text: 'Country',
-    },
+    // {
+    //   id: 2,
+    //   path: '/country',
+    //   text: 'Country',
+    // },
   ];
   return (
     <nav className="navBar">
@@ -20,12 +21,18 @@ const NavBar = () => {
         {links.map((link) => {
           return (
             <li key={link.id}>
-              <Link to={link.path}>{link.text}</Link>
+              <Link to={link.path} className="navLink">
+                {link.text}
+              </Link>
             </li>
           );
         })}
       </ul>
-      <span>Settings</span>
+      <h3>Covid-19 metrics</h3>
+      <div>
+        <i class="fa fa-microphone"></i>
+        <i class="fa fa-gear"></i>
+      </div>
     </nav>
   );
 };

@@ -8,7 +8,6 @@ import FilterByCountry from './filter';
 
 const DisplayData = () => {
   const disptach = useDispatch();
-
   const covidData = useSelector((state) => state.covidReducer);
 
   return (
@@ -25,7 +24,12 @@ const DisplayData = () => {
             <li>
               <img src={image} alt="Europe" />
               <Link to="/country" className="link">
-                <i class="fa fa-arrow-right"></i>
+                <i
+                  class="fa fa-arrow-right"
+                  onClick={() =>
+                    disptach(loadCountryData(data.country, data.confirmed))
+                  }
+                ></i>
                 <p
                   key={data.country}
                   onClick={() =>
