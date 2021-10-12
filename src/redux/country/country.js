@@ -1,10 +1,7 @@
 const FETCH_COUNTRY_DATA = 'metric-webapp-capstone/country/FETCH_COUNTRY_DATA';
 const initialState = [];
-export const loadCountryData =
-  (countryValue, countryConfirm) => async (dispatch) => {
-    const covidGet = await fetch(
-      `https://covid-api.mmediagroup.fr/v1/cases/?country=${countryValue}`
-    );
+export const loadCountryData = (countryValue, countryConfirm) => async (dispatch) => {
+    const covidGet = await fetch(`https://covid-api.mmediagroup.fr/v1/cases/?country=${countryValue}`);
     const covidList = await covidGet.json();
     const twons = [countryValue, countryConfirm];
     for (const key in covidList) {

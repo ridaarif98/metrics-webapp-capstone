@@ -1,10 +1,9 @@
 import { React } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import image from '../images/europe.png';
 import '../stylesheets/country.css';
 
 const CountryDislay = () => {
-  const dispatch = useDispatch();
   const covidData = useSelector((state) => state.countryReducer);
   return (
     <div className="countryData">
@@ -23,11 +22,14 @@ const CountryDislay = () => {
       ) : (
         <ul className="countryDetail">
           {covidData.slice(2).map((data) => (
-            <li>
+            <li key={data.name}>
               <p>{data.name}</p>
               <div>
-                <span> {data.confirmed} cases</span>
-                <i class="fa fa-arrow-circle-o-right"></i>
+                <span>
+                  {data.confirmed}
+                  cases
+                </span>
+                <i className="fa fa-arrow-circle-o-right" />
               </div>
             </li>
           ))}

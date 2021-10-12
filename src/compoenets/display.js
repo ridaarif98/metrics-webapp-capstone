@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import '../stylesheets/display.css';
-import image from '../images/europe.png';
 import { Link } from 'react-router-dom';
+import image from '../images/europe.png';
 import { loadCountryData } from '../redux/country/country';
 import FilterByCountry from './filter';
 
@@ -21,24 +21,19 @@ const DisplayData = () => {
 
         <ul className="covidList">
           {covidData.map((data) => (
-            <li>
+            <li key={data.confirmed}>
               <img src={image} alt="Europe" />
               <Link to="/country" className="link">
-                <i
-                  class="fa fa-arrow-right"
-                  onClick={() =>
-                    disptach(loadCountryData(data.country, data.confirmed))
-                  }
-                ></i>
+                <i className="fa fa-arrow-right" onClick={() => disptach(loadCountryData(data.country, data.confirmed))} />
                 <p
                   key={data.country}
-                  onClick={() =>
-                    disptach(loadCountryData(data.country, data.confirmed))
-                  }
+                  onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
                 >
                   {data.country}
                 </p>
-                <span> {data.confirmed}</span>
+                <span>
+                  {data.confirmed}
+                </span>
               </Link>
             </li>
           ))}

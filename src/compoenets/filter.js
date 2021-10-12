@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadCountryData } from '../redux/country/country';
 import { Link } from 'react-router-dom';
+import { loadCountryData } from '../redux/country/country';
 import '../stylesheets/filter.css';
 
 const FilterByCountry = () => {
@@ -14,9 +14,7 @@ const FilterByCountry = () => {
       <h2>Stats By Country</h2>
       <form>
         <select
-          onChange={(e) =>
-            disptach(loadCountryData(e.target.value, e.target.id))
-          }
+          onChange={(e) => disptach(loadCountryData(e.target.value, e.target.id))}
         >
           {covidData.map((data) => (
             <option
@@ -28,9 +26,10 @@ const FilterByCountry = () => {
             </option>
           ))}
         </select>
-        <button>
+        <button type="button">
           <Link to="/country" className="formLink">
-            <i class="fa fa-search"></i>Search
+            <i className="fa fa-search" />
+            Search
           </Link>
         </button>
       </form>
