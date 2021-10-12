@@ -23,7 +23,9 @@ const DisplayData = () => {
         <ul className="covidList">
           {covidData.map((data) => (
             <li>
-              <Link to="/country">
+              <img src={image} alt="Europe" />
+              <Link to="/country" className="link">
+                <i class="fa fa-arrow-right"></i>
                 <p
                   key={data.country}
                   onClick={() =>

@@ -45,22 +45,45 @@
 
 .covidList li {
   width: 50%;
-  height: 150px;
+  height: 200px;
   text-align: right;
-  padding-top: 140px;
-  bottom: 0;
-  padding-bottom: 0;
+  padding: 0;
   color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.covidList li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  height: 150px;
+  width: 90%;
+  opacity: 0.4;
+}
+
+.covidList li .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.covidList li i {
+  padding-right: 30px;
+  font-size: 22px;
+  padding-top: 20px;
 }
 
 .covidList li p {
-  padding: 0 15px;
+  padding-right: 30px;
+  padding-top: 95px;
+  padding-bottom: 0;
   font-size: 24px;
   font-weight: 700;
 }
 
 .covidList li span {
-  padding: 0 15px;
+  padding: 0 30px;
   font-size: 20px;
   font-weight: 600;
 }
