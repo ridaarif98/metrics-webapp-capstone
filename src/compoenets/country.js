@@ -1,25 +1,27 @@
-import { React, useEffect } from 'react';
+import { React } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadCountryData } from '../redux/country/country';
 
 const CountryDislay = () => {
   const dispatch = useDispatch();
   const covidData = useSelector((state) => state.countryReducer);
-
-  useEffect(() => {
-    dispatch(loadCountryData());
-  }, []);
-
   return (
     <div>
-      <ul>
-        {covidData.map((data) => (
-          <li>
-            {data.name}
-            {data.confirmed}
-          </li>
-        ))}
-      </ul>
+      <h2>
+        {covidData[0]}
+        {covidData[1]}
+      </h2>
+      {covidData.length === 2 ? (
+        <p>There is no data</p>
+      ) : (
+        <p>
+          {covidData.map((data) => (
+            <p>
+              {data.name}
+              {data.confirmed}
+            </p>
+          ))}
+        </p>
+      )}
     </div>
   );
 };
