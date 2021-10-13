@@ -3,14 +3,13 @@ const FETCH_CONTINENT_DATA = 'metric-webapp-capstone/metrics/FETCH_CONTINENT_DAT
 const initialState = [];
 
 export const loadAPIData = () => async (dispatch) => {
-  const covidGet = await fetch(`https://covid-api.mmediagroup.fr/v1/cases/?continent=europe`);
+  const covidGet = await fetch('https://covid-api.mmediagroup.fr/v1/cases/?continent=europe');
   const covidList = await covidGet.json();
   const covidData = Object.values(covidList).map((country) => country.All);
   const countries = covidData.map((acase) => ({
     confirmed: acase.confirmed,
     country: acase.country,
   }));
-  console.log(countries);
   dispatch({
     type: FETCH_COVID_DATA,
     payload: countries,
@@ -20,7 +19,7 @@ export const loadAPIData = () => async (dispatch) => {
 export const filterContinentData = (continent) => async (dispatch) => {
   const covidGet = await fetch(`https://covid-api.mmediagroup.fr/v1/cases/?continent=${continent}`);
   const covidList = await covidGet.json();
-  
+
   const covidData = Object.values(covidList).map((country) => country.All);
   const countries = covidData.map((acase) => ({
     confirmed: acase.confirmed,

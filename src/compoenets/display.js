@@ -28,16 +28,12 @@ const DisplayData = () => {
             {covidData.map((data) => (
               <li
                 key={data.confirmed}
-                onClick={() =>
-                  disptach(loadCountryData(data.country, data.confirmed))
-                }
+                // onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
               >
                 <img src={image} alt="Europe" />
                 <Link to="/country" className="link">
-                  <button
-                    onClick={() =>
-                      disptach(loadCountryData(data.country, data.confirmed))
-                    }
+                  <button type="button"
+                    onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
                   >
                     <i className="fa fa-arrow-right" />
                   </button>

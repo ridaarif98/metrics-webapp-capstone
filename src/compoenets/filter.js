@@ -19,7 +19,9 @@ const FilterByCountry = () => {
         <select onChange={filter}>
           <option>Seach By Continent</option>
           {continents.map((continent) => (
-            <option value={continent}> {continent}</option>
+            <option key={continent} value={continent}>
+              {continent}
+            </option>
           ))}
         </select>
       </form>
