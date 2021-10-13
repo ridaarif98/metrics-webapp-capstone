@@ -32,7 +32,8 @@ const DisplayData = () => {
               >
                 <img src={image} alt="Europe" />
                 <Link to="/country" className="link">
-                  <button type="button"
+                  <button
+                    type="button"
                     onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
                   >
                     <i className="fa fa-arrow-right" />
