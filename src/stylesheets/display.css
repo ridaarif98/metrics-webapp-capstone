@@ -68,6 +68,12 @@
   text-decoration: none;
 }
 
+.covidList li button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
 .covidList li i {
   padding-right: 30px;
   font-size: 22px;
@@ -111,4 +117,12 @@
 .covidList li:nth-child(42),
 .covidList li:nth-child(43) {
   background-color: #f85785;
+}
+
+.nodata {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 10px;
+  font-weight: 600;
 }

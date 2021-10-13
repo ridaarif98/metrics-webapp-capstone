@@ -9,35 +9,45 @@ import FilterByCountry from './filter';
 const DisplayData = () => {
   const disptach = useDispatch();
   const covidData = useSelector((state) => state.covidReducer);
+  const headingData = useSelector((state) => state.headingReducer);
 
   return (
     <div>
       <div className="HeadingDiv">
         <img src={image} alt="Europe" />
-        <h1>Europe</h1>
+        <h1>
+          {headingData.length === 0 ? <p>Europe</p> : <p>{headingData}</p>}
+        </h1>
       </div>
       <div>
         <FilterByCountry />
-
-        <ul className="covidList">
-          {covidData.map((data) => (
-            <li key={data.confirmed}>
-              <img src={image} alt="Europe" />
-              <Link to="/country" className="link">
-                <i className="fa fa-arrow-right" onClick={() => disptach(loadCountryData(data.country, data.confirmed))} />
-                <p
-                  key={data.country}
-                  onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
-                >
-                  {data.country}
-                </p>
-                <span>
-                  {data.confirmed}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {covidData.length === 0 ? (
+          <p className="nodata">There is no data of this continent</p>
+        ) : (
+          <ul className="covidList">
+            {covidData.map((data) => (
+              <li
+                key={data.confirmed}
+                onClick={() =>
+                  disptach(loadCountryData(data.country, data.confirmed))
+                }
+              >
+                <img src={image} alt="Europe" />
+                <Link to="/country" className="link">
+                  <button
+                    onClick={() =>
+                      disptach(loadCountryData(data.country, data.confirmed))
+                    }
+                  >
+                    <i className="fa fa-arrow-right" />
+                  </button>
+                  <p key={data.country}>{data.country}</p>
+                  <span>{data.confirmed}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

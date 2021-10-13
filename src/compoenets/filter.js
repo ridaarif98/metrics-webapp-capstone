@@ -1,37 +1,27 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { loadCountryData } from '../redux/country/country';
+import { useDispatch } from 'react-redux';
+import { filterContinentData } from '../redux/metrics/metrics';
+import { SetHeading } from '../redux/continent/continent';
 import '../stylesheets/filter.css';
 
 const FilterByCountry = () => {
   const disptach = useDispatch();
-
-  const covidData = useSelector((state) => state.covidReducer);
+  const continents = ['Africa', 'Europe', 'Asia', 'America'];
+  const filter = (e) => {
+    disptach(filterContinentData(e.target.value));
+    disptach(SetHeading(e.target.value));
+  };
 
   return (
     <div className="formDiv">
       <h2>Stats By Country</h2>
       <form>
-        <select
-          onChange={(e) => disptach(loadCountryData(e.target.value, e.target.id))}
-        >
-          {covidData.map((data) => (
-            <option
-              value={data.country}
-              key={data.confirmed}
-              id={data.confirmed}
-            >
-              {data.country}
-            </option>
+        <select onChange={filter}>
+          <option>Seach By Continent</option>
+          {continents.map((continent) => (
+            <option value={continent}> {continent}</option>
           ))}
         </select>
-        <button type="button">
-          <Link to="/country" className="formLink">
-            <i className="fa fa-search" />
-            Search
-          </Link>
-        </button>
       </form>
     </div>
   );
