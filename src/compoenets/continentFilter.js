@@ -1,10 +1,10 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { filterContinentData } from '../redux/metrics/metrics';
-import { SetHeading } from '../redux/continent/continent';
+import { filterContinentData } from '../redux/continent/continent';
+import { SetHeading } from '../redux/continentName/continentName';
 import '../stylesheets/filter.css';
 
-const FilterByCountry = () => {
+const FilterByContinent = () => {
   const disptach = useDispatch();
   const continents = ['Africa', 'Europe', 'Asia', 'America'];
   const filter = (e) => {
@@ -29,4 +29,4 @@ const FilterByCountry = () => {
   );
 };
 
-export default FilterByCountry;
+export default FilterByContinent;

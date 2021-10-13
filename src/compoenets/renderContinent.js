@@ -1,6 +1,6 @@
 import { React, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { loadAPIData } from '../redux/metrics/metrics';
+import { loadAPIData } from '../redux/continent/continent';
 
 const CovidDataRender = () => {
   const dispatch = useDispatch();

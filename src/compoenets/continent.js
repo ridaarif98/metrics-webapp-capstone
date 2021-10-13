@@ -4,7 +4,7 @@ import '../stylesheets/display.css';
 import { Link } from 'react-router-dom';
 import image from '../images/europe.png';
 import { loadCountryData } from '../redux/country/country';
-import FilterByCountry from './filter';
+import FilterByContinent from './continentFilter';
 
 const DisplayData = () => {
   const disptach = useDispatch();
@@ -20,7 +20,7 @@ const DisplayData = () => {
         </h1>
       </div>
       <div>
-        <FilterByCountry />
+        <FilterByContinent />
         {covidData.length === 0 ? (
           <p className="nodata">There is no data of this continent</p>
         ) : (

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test to see that all objects render correctly. Check if Continent renders. 1`] = `
+<div
+  className="countryData"
+>
+  <div
+    className="countryHeader"
+  >
+    <img
+      alt="Europe"
+      src="europe.png"
+    />
+    <div
+      className="heading"
+    >
+      <h2 />
+      <span />
+    </div>
+  </div>
+  <h1
+    className="cityHeading"
+  >
+    CITY/ TOWN BREAKDOWN
+  </h1>
+  <ul
+    className="countryDetail"
+  />
+</div>
+`;
