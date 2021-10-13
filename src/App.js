@@ -1,20 +1,27 @@
+import { Provider } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
+import DisplayData from './compoenets/display';
+import CovidDataRender from './compoenets/renderData';
+import CountryDislay from './compoenets/country';
+import store from './redux/configureStore';
+import NavBar from './compoenets/navbar';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Switch>
+        <Provider store={store}>
+          <Route exact path="/">
+            <CovidDataRender />
+            <DisplayData />
+          </Route>
+          <Route path="/country">
+            <CountryDislay />
+          </Route>
+        </Provider>
+      </Switch>
+    </>
   );
 }
 

@@ -1,0 +1,105 @@
+body {
+  background-color: #f85785;
+}
+
+.countryData {
+  background-color: #f85785;
+  margin: 0;
+  padding: 0;
+}
+
+.countryHeader {
+  display: flex;
+  flex-direction: row;
+  background-color: inherit;
+  width: 100%;
+  height: 250px;
+  border-bottom: 1px solid #f03b6f;
+}
+
+.countryHeader img {
+  height: 200px;
+  padding: 5px;
+  opacity: 0.4;
+  width: 60%;
+}
+
+.countryHeader .heading {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.countryHeader .heading h2 {
+  display: flex;
+  text-align: left;
+  font-size: 33px;
+  color: #fff;
+}
+
+.countryDetail li div span,
+.countryDetail li div i {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-right: 10px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.countryHeader .heading span {
+  font-size: 22px;
+  color: #fff;
+}
+
+.cityHeading {
+  padding: 10px 20px;
+  background-color: #ec638a;
+  color: #fff;
+}
+
+.countryDetail {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.countryDetail li {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.countryDetail li:nth-child(even) {
+  background-color: #ec638a;
+}
+
+.countryDetail li p {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.countryDetail li div {
+  display: flex;
+  padding-right: 10px;
+}
+
+.conditional {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px 10px;
+  color: #fff;
+  background-color: inherit;
+  height: 100vh;
+}

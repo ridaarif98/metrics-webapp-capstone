@@ -1,0 +1,40 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  background-color: #f85785;
+  justify-content: space-between;
+  color: #fff;
+  height: 50px;
+}
+
+.navBar ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.navBar .navLink {
+  text-decoration: none;
+  color: inherit;
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.navBar h3 {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.navBar div {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+.navBar div .fa-microphone {
+  padding-right: 28px;
+}

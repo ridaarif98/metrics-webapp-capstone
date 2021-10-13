@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.HeadingDiv {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  width: 100%;
+  background-color: #ec638a;
+}
+
+.HeadingDiv img {
+  width: 46%;
+  margin: 2%;
+  opacity: 0.3;
+}
+
+.HeadingDiv h1 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background-color: #ec638a;
+  padding: 5%;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: bolder;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.covidList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ec638a;
+}
+
+.covidList li {
+  width: 50%;
+  height: 200px;
+  text-align: right;
+  padding: 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.covidList li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  height: 150px;
+  width: 90%;
+  opacity: 0.4;
+}
+
+.covidList li .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.covidList li button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.covidList li i {
+  padding-right: 30px;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+.covidList li p {
+  padding-right: 30px;
+  padding-top: 95px;
+  padding-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.covidList li span {
+  padding: 0 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.covidList li:nth-child(2),
+.covidList li:nth-child(3),
+.covidList li:nth-child(6),
+.covidList li:nth-child(7),
+.covidList li:nth-child(10),
+.covidList li:nth-child(11),
+.covidList li:nth-child(14),
+.covidList li:nth-child(15),
+.covidList li:nth-child(18),
+.covidList li:nth-child(19),
+.covidList li:nth-child(22),
+.covidList li:nth-child(23),
+.covidList li:nth-child(26),
+.covidList li:nth-child(27),
+.covidList li:nth-child(30),
+.covidList li:nth-child(31),
+.covidList li:nth-child(34),
+.covidList li:nth-child(35),
+.covidList li:nth-child(38),
+.covidList li:nth-child(39),
+.covidList li:nth-child(42),
+.covidList li:nth-child(43) {
+  background-color: #f85785;
+}
+
+.nodata {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 10px;
+  font-weight: 600;
+}
