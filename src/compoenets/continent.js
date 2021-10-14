@@ -35,9 +35,7 @@ const DisplayData = () => {
                 <Link to="/country" className="link">
                   <button
                     type="button"
-                    onClick={() =>
-                      disptach(loadCountryData(data.country, data.confirmed))
-                    }
+                    onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
                   >
                     <i className="fa fa-arrow-right" />
                   </button>
