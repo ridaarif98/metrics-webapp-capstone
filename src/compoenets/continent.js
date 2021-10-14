@@ -2,7 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import '../stylesheets/display.css';
 import { Link } from 'react-router-dom';
-import image from '../images/europe.png';
+import image from '../images/3d-world-map-png-2.png';
+import virusImg from '../images/coronavirus.png';
 import { loadCountryData } from '../redux/country/country';
 import FilterByContinent from './continentFilter';
 
@@ -30,7 +31,7 @@ const DisplayData = () => {
                 key={data.confirmed}
                 // onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
               >
-                <img src={image} alt="Europe" />
+                <img src={virusImg} alt="Europe" />
                 <Link to="/country" className="link">
                   <button
                     type="button"
