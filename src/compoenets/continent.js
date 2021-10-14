@@ -29,10 +29,9 @@ const DisplayData = () => {
             {covidData.map((data) => (
               <li
                 key={data.confirmed}
-                // onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
               >
                 <img src={virusImg} alt="Europe" />
-                <Link to="/country" className="link">
+                <Link to="/metrics-webapp-capstone/country" className="link">
                   <button
                     type="button"
                     onClick={() => disptach(loadCountryData(data.country, data.confirmed))}

@@ -28,21 +28,6 @@ form select {
   margin: 5px;
 }
 
-form button {
-  height: 40px;
-  padding: 5px 10px;
-  margin: 5px 10px;
-  border-radius: 5px;
-  background-color: inherit;
-  border: 1px solid #fff;
-  font-size: 20px;
-}
-
-form .formLink {
-  text-decoration: none;
-  color: #fff;
-}
-
 @media (max-width: 768px) {
   .formDiv {
     width: 100%;

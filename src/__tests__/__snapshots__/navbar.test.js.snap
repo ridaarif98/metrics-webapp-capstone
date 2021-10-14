@@ -8,7 +8,7 @@ exports[`Test to see that all objects render correctly. Check if Home renders. 1
     <li>
       <a
         className="navLink"
-        href="/"
+        href="/metrics-webapp-capstone/"
         onClick={[Function]}
       >
         &lt;

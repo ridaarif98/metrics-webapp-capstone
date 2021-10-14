@@ -6,7 +6,7 @@ const NavBar = () => {
   const links = [
     {
       id: 1,
-      path: '/',
+      path: '/metrics-webapp-capstone/',
       text: '<',
     },
   ];

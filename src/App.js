@@ -12,11 +12,11 @@ function App() {
       <NavBar />
       <Switch>
         <Provider store={store}>
-          <Route exact path="/">
+          <Route exact path="/metrics-webapp-capstone/">
             <CovidDataRender />
             <DisplayData />
           </Route>
-          <Route path="/country">
+          <Route path="/metrics-webapp-capstone/country">
             <CountryDislay />
           </Route>
         </Provider>
