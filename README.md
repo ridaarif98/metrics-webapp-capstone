@@ -77,6 +77,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse for giving me this chance
-- To my Morning Team and coding partners who kept my morale up!
+- To my morning team and coding partners who kept my morale up!
 - The amazing code reviewers for making me improve every day :thumbsup:
 
