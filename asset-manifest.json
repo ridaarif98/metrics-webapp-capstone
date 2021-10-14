@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/metrics-webapp-capstone/static/css/main.9220c0d5.chunk.css",
+    "main.js": "/metrics-webapp-capstone/static/js/main.9fb66446.chunk.js",
+    "main.js.map": "/metrics-webapp-capstone/static/js/main.9fb66446.chunk.js.map",
+    "runtime-main.js": "/metrics-webapp-capstone/static/js/runtime-main.e3ba8dce.js",
+    "runtime-main.js.map": "/metrics-webapp-capstone/static/js/runtime-main.e3ba8dce.js.map",
+    "static/js/2.509a99ae.chunk.js": "/metrics-webapp-capstone/static/js/2.509a99ae.chunk.js",
+    "static/js/2.509a99ae.chunk.js.map": "/metrics-webapp-capstone/static/js/2.509a99ae.chunk.js.map",
+    "static/js/3.1d185fa7.chunk.js": "/metrics-webapp-capstone/static/js/3.1d185fa7.chunk.js",
+    "static/js/3.1d185fa7.chunk.js.map": "/metrics-webapp-capstone/static/js/3.1d185fa7.chunk.js.map",
+    "index.html": "/metrics-webapp-capstone/index.html",
+    "static/css/main.9220c0d5.chunk.css.map": "/metrics-webapp-capstone/static/css/main.9220c0d5.chunk.css.map",
+    "static/js/2.509a99ae.chunk.js.LICENSE.txt": "/metrics-webapp-capstone/static/js/2.509a99ae.chunk.js.LICENSE.txt",
+    "static/media/3d-world-map-png-2.78e251ac.png": "/metrics-webapp-capstone/static/media/3d-world-map-png-2.78e251ac.png",
+    "static/media/coronavirus.2be7498c.png": "/metrics-webapp-capstone/static/media/coronavirus.2be7498c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3ba8dce.js",
+    "static/js/2.509a99ae.chunk.js",
+    "static/css/main.9220c0d5.chunk.css",
+    "static/js/main.9fb66446.chunk.js"
+  ]
+}
