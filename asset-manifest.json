@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/metrics-webapp-capstone/static/css/main.9220c0d5.chunk.css",
-    "main.js": "/metrics-webapp-capstone/static/js/main.9fb66446.chunk.js",
-    "main.js.map": "/metrics-webapp-capstone/static/js/main.9fb66446.chunk.js.map",
+    "main.js": "/metrics-webapp-capstone/static/js/main.5d7a0c32.chunk.js",
+    "main.js.map": "/metrics-webapp-capstone/static/js/main.5d7a0c32.chunk.js.map",
     "runtime-main.js": "/metrics-webapp-capstone/static/js/runtime-main.e3ba8dce.js",
     "runtime-main.js.map": "/metrics-webapp-capstone/static/js/runtime-main.e3ba8dce.js.map",
     "static/js/2.509a99ae.chunk.js": "/metrics-webapp-capstone/static/js/2.509a99ae.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.e3ba8dce.js",
     "static/js/2.509a99ae.chunk.js",
     "static/css/main.9220c0d5.chunk.css",
-    "static/js/main.9fb66446.chunk.js"
+    "static/js/main.5d7a0c32.chunk.js"
   ]
 }
