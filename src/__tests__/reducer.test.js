@@ -16,8 +16,7 @@ describe('Test data and country reducer', () => {
   });
 
   test('Reducer test with mockstore', () => {
-    const FETCH_COUNTRY_DATA =
-      'metric-webapp-capstone/country/FETCH_COUNTRY_DATA';
+    const FETCH_COUNTRY_DATA = 'metric-webapp-capstone/country/FETCH_COUNTRY_DATA';
     const store = mockStore;
     const action = {
       type: FETCH_COUNTRY_DATA,
@@ -43,8 +42,7 @@ describe('Covid Reducer tests', () => {
   });
 
   test('Reducer test with mockstore', () => {
-    const FETCH_COVID_DATA =
-      'metric-webapp-capstone/continent/FETCH_COVID_DATA';
+    const FETCH_COVID_DATA = 'metric-webapp-capstone/continent/FETCH_COVID_DATA';
     const store = mockStore;
     const action = {
       type: FETCH_COVID_DATA,

@@ -35,13 +35,15 @@ const DisplayData = () => {
                 <Link to="/country" className="link">
                   <button
                     type="button"
-                    onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
+                    onClick={() =>
+                      disptach(loadCountryData(data.country, data.confirmed))
+                    }
                   >
                     <i className="fa fa-arrow-right" />
                   </button>
-                  <p key={data.country}>{data.country}</p>
-                  <span>{data.confirmed}</span>
                 </Link>
+                <p key={data.country}>{data.country}</p>
+                <span>{data.confirmed}</span>
               </li>
             ))}
           </ul>

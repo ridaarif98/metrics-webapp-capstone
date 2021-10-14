@@ -13,7 +13,7 @@ describe('Test to see that all objects render correctly.', () => {
           <Provider store={store}>
             <CountryDislay />
           </Provider>
-        </Router>
+        </Router>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

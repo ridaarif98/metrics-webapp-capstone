@@ -9,7 +9,7 @@ describe('Test to see that all objects render correctly.', () => {
       .create(
         <Router>
           <NavBar />
-        </Router>
+        </Router>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
