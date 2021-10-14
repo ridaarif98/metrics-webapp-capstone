@@ -12,7 +12,7 @@ exports[`Test to see that all objects render correctly. Check if Continent rende
       onChange={[Function]}
     >
       <option>
-        Seach By Continent
+        Search By Continent
       </option>
       <option
         value="Africa"

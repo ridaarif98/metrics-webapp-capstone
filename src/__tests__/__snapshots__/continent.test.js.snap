@@ -7,7 +7,7 @@ exports[`Test to see that all objects render correctly. Check if Continent rende
   >
     <img
       alt="Europe"
-      src="europe.png"
+      src="3d-world-map-png-2.png"
     />
     <h1>
       <p>
@@ -27,7 +27,7 @@ exports[`Test to see that all objects render correctly. Check if Continent rende
           onChange={[Function]}
         >
           <option>
-            Seach By Continent
+            Search By Continent
           </option>
           <option
             value="Africa"
