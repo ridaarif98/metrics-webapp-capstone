@@ -1,7 +1,7 @@
 .navBar {
   display: flex;
   flex-direction: row;
-  background-color: #f85785;
+  background: linear-gradient(to top, #2c3e50, #3498db);
   justify-content: space-between;
   color: #fff;
   height: 50px;
@@ -37,4 +37,44 @@
 
 .navBar div .fa-microphone {
   padding-right: 28px;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to top, #2c3e50, #3498db);
+    justify-content: space-between;
+    color: #fff;
+    height: 50px;
+  }
+
+  .navBar .navLink {
+    text-decoration: none;
+    color: inherit;
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 12px;
+  }
+
+  .navBar h3 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .navBar div {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    padding-right: 10px;
+  }
+
+  .navBar div .fa-microphone {
+    padding-right: 20px;
+  }
 }

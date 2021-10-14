@@ -2,9 +2,10 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import '../stylesheets/display.css';
 import { Link } from 'react-router-dom';
-import image from '../images/europe.png';
+import image from '../images/3d-world-map-png-2.png';
+import virusImg from '../images/coronavirus.png';
 import { loadCountryData } from '../redux/country/country';
-import FilterByCountry from './filter';
+import FilterByContinent from './continentFilter';
 
 const DisplayData = () => {
   const disptach = useDispatch();
@@ -20,7 +21,7 @@ const DisplayData = () => {
         </h1>
       </div>
       <div>
-        <FilterByCountry />
+        <FilterByContinent />
         {covidData.length === 0 ? (
           <p className="nodata">There is no data of this continent</p>
         ) : (
@@ -30,7 +31,7 @@ const DisplayData = () => {
                 key={data.confirmed}
                 // onClick={() => disptach(loadCountryData(data.country, data.confirmed))}
               >
-                <img src={image} alt="Europe" />
+                <img src={virusImg} alt="Europe" />
                 <Link to="/country" className="link">
                   <button
                     type="button"
@@ -38,9 +39,9 @@ const DisplayData = () => {
                   >
                     <i className="fa fa-arrow-right" />
                   </button>
-                  <p key={data.country}>{data.country}</p>
-                  <span>{data.confirmed}</span>
                 </Link>
+                <p key={data.country}>{data.country}</p>
+                <span>{data.confirmed}</span>
               </li>
             ))}
           </ul>

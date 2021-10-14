@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { useSelector } from 'react-redux';
-import image from '../images/europe.png';
+import image from '../images/3d-world-map-png-2.png';
 import '../stylesheets/country.css';
 
 const CountryDislay = () => {

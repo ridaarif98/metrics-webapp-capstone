@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test to see that all objects render correctly. Check if Continent renders. 1`] = `
+<div>
+  <div
+    className="HeadingDiv"
+  >
+    <img
+      alt="Europe"
+      src="3d-world-map-png-2.png"
+    />
+    <h1>
+      <p>
+        Europe
+      </p>
+    </h1>
+  </div>
+  <div>
+    <div
+      className="formDiv"
+    >
+      <h2>
+        Stats By Country
+      </h2>
+      <form>
+        <select
+          onChange={[Function]}
+        >
+          <option>
+            Search By Continent
+          </option>
+          <option
+            value="Africa"
+          >
+            Africa
+          </option>
+          <option
+            value="Europe"
+          >
+            Europe
+          </option>
+          <option
+            value="Asia"
+          >
+            Asia
+          </option>
+          <option
+            value="America"
+          >
+            America
+          </option>
+        </select>
+      </form>
+    </div>
+    <p
+      className="nodata"
+    >
+      There is no data of this continent
+    </p>
+  </div>
+</div>
+`;

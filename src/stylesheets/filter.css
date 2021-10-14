@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #ec638a;
+  background-color: #004e92;
 }
 
 .formDiv h2 {
@@ -12,7 +12,7 @@
 }
 
 form {
-  background-color: #ec638a;
+  background-color: inherit;
   display: flex;
 }
 
@@ -22,7 +22,7 @@ form select {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 20px;
-  background-color: #ec638a;
+  background-color: inherit;
   color: #fff;
   border: 1px solid #fff;
   margin: 5px;
@@ -41,4 +41,35 @@ form button {
 form .formLink {
   text-decoration: none;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .formDiv {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #004e92;
+    padding: 8px 0;
+  }
+
+  .formDiv h2 {
+    color: #fff;
+    padding: 6px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  form select {
+    height: 30px;
+    width: 160px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: inherit;
+    color: #fff;
+    border: 1px solid #fff;
+  }
 }

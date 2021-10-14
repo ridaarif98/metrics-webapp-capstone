@@ -1,9 +1,9 @@
 body {
-  background-color: #f85785;
+  background: linear-gradient(to bottom, #000428, #004e92);
 }
 
 .countryData {
-  background-color: #f85785;
+  background-color: #3498db;
   margin: 0;
   padding: 0;
 }
@@ -14,18 +14,17 @@ body {
   background-color: inherit;
   width: 100%;
   height: 250px;
-  border-bottom: 1px solid #f03b6f;
+  border-bottom: 1px solid #3498db;
 }
 
 .countryHeader img {
   height: 200px;
   padding: 5px;
-  opacity: 0.4;
+  opacity: 0.5;
   width: 60%;
 }
 
 .countryHeader .heading {
-  width: 40%;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -56,7 +55,7 @@ body {
 
 .cityHeading {
   padding: 10px 20px;
-  background-color: #ec638a;
+  background-color: #004e92;
   color: #fff;
 }
 
@@ -72,12 +71,13 @@ body {
   height: 100px;
   display: flex;
   flex-direction: row;
+  background: linear-gradient(to right, #2d465f, #3498db);
   justify-content: space-between;
   color: #fff;
 }
 
 .countryDetail li:nth-child(even) {
-  background-color: #ec638a;
+  background: linear-gradient(to left, #0b1461, #004e92);
 }
 
 .countryDetail li p {
@@ -102,4 +102,38 @@ body {
   color: #fff;
   background-color: inherit;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .countryHeader .heading h2 {
+    display: flex;
+    text-align: left;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .countryHeader .heading span {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .cityHeading {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #004e92;
+    color: #fff;
+  }
+
+  .conditional {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 30px;
+    color: #fff;
+    background-color: inherit;
+    height: 100vh;
+  }
 }
