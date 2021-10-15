@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Covid-19 Metrics Webapp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Covid-19 Tracking Project collects information from different data sources to provide comprehensive data for the novel coronavirus, and You can filter them by continent or by country.
 
-## Available Scripts
+## Built with
 
-In the project directory, you can run:
+- HTML/CSS
+- React-Redux
+- Node.JS
+- API
 
-### `npm start`
+### Project Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The project is a single page application (SPA) built with React and Redux.
+- The data retrieved from the API is stored in the Redux store.
+- You can filter the data that you retrieve from the API.
+- Every page have a unique route within the SPA.
+- The project hass two pages
+    - `Home Page`: When the page loads, the webapp shows the list of categories that could be filtered out by some parameter
+    - `Details Page`: In the details page, the webapp retrieves data from the API to show detailed data in the category.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+If you want a copy of this file go to the github repository and download it from there
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Covid-19 metrics Webapp](https://github.com/ridaarif98/metrics-webapp-capstone)
 
-### `npm run build`
+### Presebtation Video
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Video](https://www.loom.com/share/956cbaebda67468b83279d79ed2b03b5)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Live
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[LiveDemo](https://ridaarif98.github.io/metrics-webapp-capstone/)
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```cmd
+ git clone https://github.com/ridaarif98/metrics-webapp-capstone.git
+ cd metrics-webapp-capstone
+```
+### Install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```cmd
+npm install
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Usage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```cmd
+npm start
+```
 
-## Learn More
+### To run Test
+```cmd
+npm run test
+```
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Rida Arif**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@ridaarif98](https://github.com/ridaarif98)
+- Twitter: [@ridaarif](https://twitter.com/Rida29984906)
+- LinkedIn: [Rida Arif](https://www.linkedin.com/in/rida-arif-90945520b/)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](https://github.com/ridaarif98/metrics-webapp-capstone/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+- Microverse for giving me this chance
+- To my morning team and coding partners who kept my morale up!
+- The amazing code reviewers for making me improve every day :thumbsup:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

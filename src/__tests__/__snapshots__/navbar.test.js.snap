@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test to see that all objects render correctly. Check if Home renders. 1`] = `
+<nav
+  className="navBar"
+>
+  <ul>
+    <li>
+      <a
+        className="navLink"
+        href="/metrics-webapp-capstone/"
+        onClick={[Function]}
+      >
+        &lt;
+      </a>
+    </li>
+  </ul>
+  <h3>
+    Covid-19 metrics
+  </h3>
+  <div>
+    <i
+      className="fa fa-microphone"
+    />
+    <i
+      className="fa fa-gear"
+    />
+  </div>
+</nav>
+`;

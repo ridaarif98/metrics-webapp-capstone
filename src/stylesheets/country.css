@@ -1,0 +1,139 @@
+body {
+  background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+.countryData {
+  background-color: #3498db;
+  margin: 0;
+  padding: 0;
+}
+
+.countryHeader {
+  display: flex;
+  flex-direction: row;
+  background-color: inherit;
+  width: 100%;
+  height: 250px;
+  border-bottom: 1px solid #3498db;
+}
+
+.countryHeader img {
+  height: 200px;
+  padding: 5px;
+  opacity: 0.5;
+  width: 60%;
+}
+
+.countryHeader .heading {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.countryHeader .heading h2 {
+  display: flex;
+  text-align: left;
+  font-size: 33px;
+  color: #fff;
+}
+
+.countryDetail li div span,
+.countryDetail li div i {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-right: 10px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.countryHeader .heading span {
+  font-size: 22px;
+  color: #fff;
+}
+
+.cityHeading {
+  padding: 10px 20px;
+  background-color: #004e92;
+  color: #fff;
+}
+
+.countryDetail {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.countryDetail li {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to right, #2d465f, #3498db);
+  justify-content: space-between;
+  color: #fff;
+}
+
+.countryDetail li:nth-child(even) {
+  background: linear-gradient(to left, #0b1461, #004e92);
+}
+
+.countryDetail li p {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.countryDetail li div {
+  display: flex;
+  padding-right: 10px;
+}
+
+.conditional {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px 10px;
+  color: #fff;
+  background-color: inherit;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .countryHeader .heading h2 {
+    display: flex;
+    text-align: left;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .countryHeader .heading span {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .cityHeading {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #004e92;
+    color: #fff;
+  }
+
+  .conditional {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 30px;
+    color: #fff;
+    background-color: inherit;
+    height: 100vh;
+  }
+}
