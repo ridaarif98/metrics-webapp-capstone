@@ -25,7 +25,7 @@ If you want a copy of this file go to the github repository and download it from
 
 - [Covid-19 metrics Webapp](https://github.com/ridaarif98/metrics-webapp-capstone)
 
-### Presebtation Video
+### Presentation Video
 
 [Video](https://www.loom.com/share/956cbaebda67468b83279d79ed2b03b5)
 
